@@ -1,0 +1,60 @@
+body {
+  background: url(pictures/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Gotham;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: GothamB;
+  src: url(fonts/Gotham-Bold.otf);
+}
+.tagcloud {
+  display: inline-block;
+  top: 100px;
+  left: 32%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: Gotham;
+  font-size: 20px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Head {
+  color: azure;
+  font-weight: bolder;
+  /* text-transform: uppercase; */
+  font-size: 20px;
+  font-family: Gotham;
+  /* background-image: linear-gradient(to right, #c9082a, #ffffff, #002d62);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+a {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(55, 75, 75);
+  animation: heartbeat 5s infinite;
+  font-family: GothamB;
+}
+
+@keyframes heartbeat {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}

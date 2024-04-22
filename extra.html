@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nba teams</title>
+    <link rel="stylesheet" href="extra.css" />
+  </head>
+  <body>
+    <div class="Head">
+      <h3
+        style="
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        "
+      >
+        Let's see what fate has in store for <a href="final.html">YOU</a>
+      </h3>
+    </div>
+
+    <span class="Sphere"></span>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script>
+      const Texts = [
+        "LAKERS",
+        "NUGGETS",
+        "CLIPPERS",
+        "PELICANS",
+        "TIMBERWOLVES",
+        "CELTICS",
+        "HEAT",
+        "KNICKS",
+        "76ERS",
+        "BUCKS",
+        "PACERS",
+        "CAVALIERS",
+        "MAGIC",
+        "OKC",
+        "SUNS",
+      ];
+      var TagCloud = TagCloud(".Sphere", Texts, {
+        radius: 230,
+        maxSpeed: "normal",
+        initSpeed: "fast",
+        direction: 135,
+        keep: true,
+      });
+
+      // to do favicon
+      // let and var problem why we use let and var instead of const
+
+      const color = "#ee6730";
+      document.querySelector(".Sphere").style.color = color;
+    </script>
+  </body>
+</html>

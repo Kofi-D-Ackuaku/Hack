@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(fonts/Gotham-Light.otf);
+}
+
+body {
+  background: url(pictures/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: change 30s infinite ease-in-out;
+  font-family: Gotham;
+  color: azure;
+  display: block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* medium */
+
+@keyframes change {
+  20% {
+    background: url(pictures/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background: url(pictures/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background: url(pictures/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  80% {
+    background: url(pictures/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: url(pictures/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+a:hover::before {
+  transform: scaleY(0);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background: transparent;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+a:hover::after {
+  transform: scaleX(0);
+}
+
+a span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+  background-color: none;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  margin-left: 40%;
+  margin-top: 30px;
+}
+
+#title {
+  display: block;
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+#next {
+  margin-top: 20px;
+}
+
+#content {
+  margin-top: 20px;
+}
+
+p {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
